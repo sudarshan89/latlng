@@ -1,4 +1,4 @@
-LAT LONG and UTC Date Converter
+LAT LONG to Timezone and UTC Date to Local date Converter
 =========
 
 Develop a small application to read a CSV with a UTC datetime, latitude and longitude columns and append the timezone the vehicle is in and the localised datetime. 
