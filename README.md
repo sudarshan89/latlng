@@ -13,6 +13,8 @@ See example of CSV input and output below. We will then run this over several te
 
 ---
 
+![Badge](https://img.shields.io/shippable/56c782b11895ca44747475a5.svg)
+
 ## Solution (Code Kata)
 
 1. Leverage on Google Timezone API to get timezone for a given Lat Long position.
