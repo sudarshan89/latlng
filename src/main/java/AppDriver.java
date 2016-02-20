@@ -65,6 +65,6 @@ public class AppDriver {
     private LocalDateTime getLocalDateFromUtc(String dateTime){
         final DateTimeFormatter UTCTimeFormat = getUTCDateTimeFormat();
         final ZonedDateTime zonedDateTime = ZonedDateTime.parse(dateTime, UTCTimeFormat);
-        return LocalDateTime.ofInstant(zonedDateTime.toInstant(), ZoneId.systemDefault());
+        return LocalDateTime.ofInstant(zonedDateTime.toInstant(), ZoneId.of("Pacific/Auckland"));
     }
 }
