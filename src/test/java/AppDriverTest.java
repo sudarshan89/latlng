@@ -32,7 +32,7 @@ public class AppDriverTest {
 
     @Test
     public void testConvert() {
-        stub(latLngToTimezoneConverter.apply(any(LatLng.class))).toReturn(Optional.of(getTimeZone(ZoneId.systemDefault())));
+        stub(latLngToTimezoneConverter.apply(any(LatLng.class))).toReturn(Optional.of(getTimeZone( ZoneId.of("Pacific/Auckland"))));
         final List<String> input = Lists.newArrayList("2013-07-10 02:52:49,-44.490947,171.220966");
         final List<String> actualOutput = appDriver.convert(input, latLngToTimezoneConverter);
         assertThat(actualOutput).isEqualTo(Lists.newArrayList("2013-07-10 02:52:49,-44.490947,171.220966,Pacific/Auckland,2013-07-10 14:52:49"));
